@@ -1,15 +1,67 @@
+// data.js
+
 const GYOZA_DEMO_DATA = {
   users: [
     { id: 1, name: 'Administrador Demo', email: 'admin@demo.com', password: 'admin123', role: 'Administrador' },
     { id: 2, name: 'Laura Mesera', email: 'mesera@demo.com', password: 'mesera123', role: 'Mesero' }
   ],
   menu: [
-    { id: 101, name: 'Gyoza de pollo', category: 'Entradas', price: 18000, prepTime: '12 min', description: 'Porción de gyozas artesanales rellenas de pollo y vegetales.' },
-    { id: 102, name: 'Ramen especial', category: 'Fuertes', price: 32000, prepTime: '18 min', description: 'Caldo concentrado, fideos, proteína marinada y toppings frescos.' },
-    { id: 103, name: 'Arroz yakimeshi', category: 'Fuertes', price: 24000, prepTime: '14 min', description: 'Arroz salteado con vegetales, huevo y salsa de la casa.' },
-    { id: 104, name: 'Té frío de limón', category: 'Bebidas', price: 7000, prepTime: '4 min', description: 'Bebida refrescante preparada al instante.' },
-    { id: 105, name: 'Cheesecake de matcha', category: 'Postres', price: 15000, prepTime: '5 min', description: 'Postre cremoso con suave sabor a matcha.' },
-    { id: 106, name: 'Combo ejecutivo', category: 'Promociones', price: 39000, prepTime: '20 min', description: 'Incluye plato fuerte, bebida y postre del día.' }
+    { 
+      id: 101, 
+      name: 'Gyoza de pollo', 
+      category: 'Entradas', 
+      price: 18000, 
+      prepTime: '12 min', 
+      description: 'Porción de gyozas artesanales rellenas de pollo y vegetales.',
+      // REEMPLAZA ESTA URL con la ruta de tu imagen local
+      // Ejemplo: imagen: 'assets/img/gyoza.jpg'
+      imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBveJ_EcRVKdc3v0oJWPtWkTmGs3JpGo92gMEptUxKA&s=10'
+    },
+    { 
+      id: 102, 
+      name: 'Ramen especial', 
+      category: 'Fuertes', 
+      price: 32000, 
+      prepTime: '18 min', 
+      description: 'Caldo concentrado, fideos, proteína marinada y toppings frescos.',
+      imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV29AvdF8t27fX6CIX6EGoBjLjYhPkAA-YqZID4ZefvQ&s=10'
+    },
+    { 
+      id: 103, 
+      name: 'Arroz yakimeshi', 
+      category: 'Fuertes', 
+      price: 24000, 
+      prepTime: '14 min', 
+      description: 'Arroz salteado con vegetales, huevo y salsa de la casa.',
+      imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsjMYLuA6Ej_-a0wdhkURRt5FllqIGqLd5tuD7ehCXNA&s=10'
+    },
+    { 
+      id: 104, 
+      name: 'Té frío de limón', 
+      category: 'Bebidas', 
+      price: 7000, 
+      prepTime: '4 min', 
+      description: 'Bebida refrescante preparada al instante.',
+      imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHWYjINXYBFw7hJIh01tfl4ciGNjQRRVWJdbUuIv310Q&s=10'
+    },
+    { 
+      id: 105, 
+      name: 'Cheesecake de matcha', 
+      category: 'Postres', 
+      price: 15000, 
+      prepTime: '5 min', 
+      description: 'Postre cremoso con suave sabor a matcha.',
+      imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTij5T4JH1-PHT5vCwCXLqbr_oHrCpnee327MOa3zpcXg&s=10 '
+    },
+    { 
+      id: 106, 
+      name: 'Combo ejecutivo', 
+      category: 'Promociones', 
+      price: 39000, 
+      prepTime: '20 min', 
+      description: 'Incluye plato fuerte, bebida y postre del día.',
+      imagen: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgsj5VPCRgk3_EYmFsH2iOlY29yhs--qgxlTzae1PtuQ&s=10'
+    }
   ],
   tables: [
     { id: 1, name: 'Mesa 1', seats: 4, status: 'libre', waiter: 'Laura', currentOrderId: null },
